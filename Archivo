@@ -1,0 +1,8 @@
+dataset<-read.csv("USA_cars_datasets.csv")
+
+valores<-dataset$price
+
+lista<-hist(valores, plot=FALSE)
+tabla<-table.freq(lista)
+
+histograma<-hist(valores)
