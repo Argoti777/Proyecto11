@@ -29,10 +29,13 @@ Realizar:
 
 ## Tabla de frecuencias:
 
-#Tabla de Frecuencias
+#Tabla de Frecuencias Calidad 
 lista<-hist(calidad, plot=FALSE)
 tablaFreq<-table.freq(lista)
 
+#Tabla de Frecuencias alcohol
+lista <- hist(alcohol, plot = FALSE)
+tablaFreq <- table.freq(lista)
 
 ## Histograma:
 
