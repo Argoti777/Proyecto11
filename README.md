@@ -62,7 +62,7 @@ print("Este poligono de frecuencias indica que la calidad de vino 5 y 6
       que se observan, ademas existe una asimetria a la derecha lo que 
       significa que los valores son mas altos en el lado derecho del grafico")
 
-### #Polígono de Frecuencias alcohol
+### #Polígono de Frecuencias Alcohol
 plot(density(alcohol), main = "Polígono de Frecuencia", xlab = "Alcohol",
      ylab = "Densidad", col = "#6666FF", lwd = 3)
 print("Este polígono de frecuencias indica que el contenido de alcohol más común en los vinos está alrededor del 9.8, con una distribución asimétrica hacia la izquierda, lo que sugiere que hay menos vinos con contenido de alcohol muy alto.")
@@ -78,7 +78,7 @@ print("Este grafico de pastel nos indica que la mayoria de los vinos son
       mientras que las calidad 6 y 7 no son muy comunes.")
 legend("bottomright", legend = levels(as.factor(calidad10)), fill = c("purple", "red", "white","pink"))
 
-### #Gráfico de Pastel alcohol
+### #Gráfico de Pastel Alcohol
 acidez<-dataset$fixed.acidity
 alcoholV<-alcohol[acidez]
 colores<- c("#FF6666", "#66FF66", "#6666FF", "#FFFF66", "#FF66FF", "#66FFFF", "#FFCC66", "#996699")
@@ -191,7 +191,7 @@ paste("El coeficiente de variación del contenido de alcohol en los vinos es:", 
 
 ## Cuartiles, deciles y percentiles:
 
-### #Cuartiles,deciles y percentiles Alcohol
+### #Cuartiles,deciles y percentiles Calidad
 cuartiles <- function(vector){
   q <- quantile(vector,probs = c(0.25, 0.50, 0.75))
   return(q)
@@ -213,7 +213,7 @@ percentiles <- function(vector){
 }
 percentiles(calidad)
 
-### #Cuartiles, Deciles y Percentiles Calidad
+### #Cuartiles, Deciles y Percentiles Alcohol
 cuartiles <- function(vector) {
   q <- quantile(vector, probs = c(0.25, 0.50, 0.75))
   return(q)
@@ -245,7 +245,7 @@ print("El diagrama de cajas nos da una idea de cómo está distribuido el conten
 
 ## Diagrama de pareto
 
-### #Diagrama de pareto Alcohol
+### #Diagrama de pareto Calidad
 pareto.chart(
   calidad[1:10], 
   ylab = "Frecuencias", 
@@ -256,7 +256,7 @@ pareto.chart(
 )
 print("El bloque H es el que representa la mayoria de problemas, por lo tanto hay que priozar la mejora de ese conjunto")
 
-### #Diagrama de pareto Calidad
+### #Diagrama de pareto Alchol
 pareto.chart(
   alcohol[1:10], 
   ylab = "Frecuencias", 
