@@ -33,7 +33,7 @@ Realizar:
 lista<-hist(calidad, plot=FALSE)
 tablaFreq<-table.freq(lista)
 
-#### #Tabla de Frecuencias alcohol
+#### #Tabla de Frecuencias Alcohol
 lista <- hist(alcohol, plot = FALSE)
 tablaFreq <- table.freq(lista)
 
