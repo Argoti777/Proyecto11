@@ -56,14 +56,13 @@ print("Este poligono de frecuencias indica que la calidad de vino 5 y 6
 ## Grafico circular:
 
 #Grafico de Pastel
-alcohol<-dataset$free.sulfur.dioxide
-calidad10<-calidad[alcohol]
+dioxido<-dataset$free.sulfur.dioxide
+calidad10<-calidad[dioxido]
 pie(table(calidad10), main = "Calidad de los vinos", col = c("purple", "red", "white","pink"))
 print("Este grafico de pastel nos indica que la mayoria de los vinos son 
       decentes, ya que la mayoria tiene una calidad de 5 con mas del 50% 
       mientras que las calidad 6 y 7 no son muy comunes.")
 legend("bottomright", legend = levels(as.factor(calidad10)), fill = c("purple", "red", "white","pink"))
-
 
 ## Media:
 
