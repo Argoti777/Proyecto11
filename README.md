@@ -8,7 +8,8 @@ Carrera  | Desarollo de Software  |
 Nivel: | Tercer Nivel |
 Estudiantes  | Bryan Velasco, Alejandro Argoti, Alexis Velasco , Gabriel Salazar    |
 
-
+# Version de R: 4.3.2
+# Version de RStudio: 2023.12.1+402
 # Proyecto Estadistica descriptiva
 
 ## Dataset de vinos
