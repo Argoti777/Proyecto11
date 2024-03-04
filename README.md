@@ -256,7 +256,7 @@ pareto.chart(
 )
 print("El bloque H es el que representa la mayoria de problemas, por lo tanto hay que priozar la mejora de ese conjunto")
 
-### #Diagrama de pareto Alchol
+### #Diagrama de pareto Alcohol
 pareto.chart(
   alcohol[1:10], 
   ylab = "Frecuencias", 
