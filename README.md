@@ -169,5 +169,5 @@ pareto.chart(
 )
 print("El bloque H es el que representa la mayoria de problemas, por lo tanto hay que priozar la mejora de ese conjunto")
 
-![]("C:\Users\aleja\OneDrive\Escritorio\broooo.jpg")
+![](bef88a2e2f07ad84e80b0b888187443b03c183e3r1-195-258v2_uhq.jpg)
 
