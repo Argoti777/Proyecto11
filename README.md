@@ -9,11 +9,11 @@ Carrera  | Desarollo de Software  |
 Nivel: | Tercer Nivel |
 Estudiantes  | Bryan Velasco, Alejandro Argoti, Alexis Velasco , Gabriel Salazar    |
 
-Proyecto Estadistica descriptiva
+### Proyecto Estadistica descriptiva
 
-Dataset de vinos
+## Dataset de vinos
 
-Descripción:
+## Descripción:
 
 Los dos conjuntos de datos están relacionados con las variantes tinta y blanca del vino portugués
 "Vinho Verde". Para más detalles, consultar la referencia [Cortez et al., 2009]. Debido a
