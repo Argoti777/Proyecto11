@@ -27,14 +27,14 @@ Repositorio: https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al
 
 Realizar:
 
-Tabla de frecuencias:
+## Tabla de frecuencias:
 
 #Tabla de Frecuencias
 lista<-hist(calidad, plot=FALSE)
 tablaFreq<-table.freq(lista)
 
 
-Histograma:
+## Histograma:
 
 #Histograma
 histograma<-hist(calidad, xlab="CALIDAD", ylab="FRECUENCIA",
@@ -43,7 +43,7 @@ print("Este histograma indica que en esta muestra de datos de 'Vinho verde'
       existen una concentracion de vinos con una calidad buena o normal,
       mientras que casi no hay vinos terribles o excelentes")
 
-Poligono de frecuencia:
+## Poligono de frecuencia:
 
 #Poligono de Frecuencias
 plot(density(calidad), main = "Polígono de Frecuencia", xlab = "Calidad",
@@ -53,7 +53,7 @@ print("Este poligono de frecuencias indica que la calidad de vino 5 y 6
       que se observan, ademas existe una asimetria a la derecha lo que 
       significa que los valores son mas altos en el lado derecho del grafico")
       
-Grafico circular:
+## Grafico circular:
 
 #Grafico de Pastel
 alcohol<-dataset$free.sulfur.dioxide
@@ -65,7 +65,7 @@ print("Este grafico de pastel nos indica que la mayoria de los vinos son
 legend("bottomright", legend = levels(as.factor(calidad10)), fill = c("purple", "red", "white","pink"))
 
 
-Media:
+## Media:
 
 #Media
 media<-function(vector){
@@ -74,7 +74,7 @@ media<-function(vector){
 paste("El promedio de calidad de los vinos es:",media(calidad),"esto signfica que en su mayoria se encuentran solo vinos decentes pero no excelentes")
 
 
-Mediana:
+## Mediana:
 
 #Mediana
 mediana<-function(vector){
@@ -84,7 +84,7 @@ mediana<-function(vector){
 paste("La mediana es:",mediana(calidad),"esto indica que la calidad 
       de la mayoria de los vinos es decente")
 
-Moda:
+## Moda:
 
 #Moda
 moda <- function(vector){
@@ -94,7 +94,7 @@ moda <- function(vector){
 }
 paste("La calidad que mas se repite es:",moda(calidad),"ya que la mayoria de los vinos son decentes mas no terribles o excelentes")
 
-Varianza y desviacion estandar:
+## Varianza y desviacion estandar:
 
 #Varianza y Desviacion Estandar
 varianza<-function(vector){
@@ -106,7 +106,7 @@ desviacionEstandar<-function(vector){
 
 paste("La varianza es:",varianza(calidad),"y la desviacion estandar es:",desviacionEstandar(calidad),"estos valores nos indican que los datos no estan muy dispersos por lo que los valores son constantes debido a que los valores de la muestra solo van del 1 al 10")
 
-Rango:
+## Rango:
 
 #Rango
 rango <-function(calificaciones){
@@ -116,7 +116,7 @@ rango <-function(calificaciones){
 paste("El rango es:",rango(calidad),"nos indica que ")
 
 
-Coeficiente de variacion:
+## Coeficiente de variacion:
 
 #Coeficiente de variacion
 coeficiente<-function(desviacion,media){
@@ -125,7 +125,7 @@ coeficiente<-function(desviacion,media){
 
 paste("el porcentaje en el que los datos varian es del:",coeficiente(desviacionEstandar(calidad),media(calidad)),"%")
 
-Cuartiles, deciles y percentiles:
+## Cuartiles, deciles y percentiles:
 
 #Cuartiles,deciles y percentiles
 cuartiles <- function(vector){
@@ -150,10 +150,21 @@ percentiles <- function(vector){
 percentiles(calidad)
 
 
-Diagrama de cajas:
+## Diagrama de cajas:
 
 #Diagrama de cajas
 boxplot(calidad, main = "Calidad de vinos", ylab = "Calidad",col="purple")
 
 print("El diagrama de cajas nos da una idea de cómo está distribuida la calidad de los vinos. La línea en el medio representa la calidad media, mientras que la longitud de la caja nos dice cuánto varía esa calidad. Los bigotes muestran lo lejos que pueden ir los vinos de la norma, con algunos valores atípicos por ahí. La forma de la distribución nos dice si la mayoría de los vinos son decentes o si hay más extremos. En general, parece que la mayoría de los vinos están en un punto medio decente.")
 
+## Diagrama de pareto
+
+pareto.chart(
+  calidad[1:10], 
+  ylab = "Frecuencias", 
+  col = heat.colors(length(calidad[1:10])),
+  cumperc = seq(0, 100, by = 20),
+  ylab2 = "Porcentaje acumulado",
+  main = "Calidad de los vinos"
+)
+print("El bloque H es el que representa la mayoria de problemas, por lo tanto hay que priozar la mejora de ese conjunto")
