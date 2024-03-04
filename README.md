@@ -29,11 +29,11 @@ Realizar:
 
 ## Tabla de frecuencias:
 
-### #Tabla de Frecuencias Calidad 
+#### #Tabla de Frecuencias Calidad 
 lista<-hist(calidad, plot=FALSE)
 tablaFreq<-table.freq(lista)
 
-### #Tabla de Frecuencias alcohol
+#### #Tabla de Frecuencias alcohol
 lista <- hist(alcohol, plot = FALSE)
 tablaFreq <- table.freq(lista)
 
