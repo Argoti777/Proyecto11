@@ -9,6 +9,7 @@ Carrera  | Desarollo de Software  |
 Nivel: | Tercer Nivel |
 Estudiantes  | Bryan Velasco, Alejandro Argoti, Alexis Velasco , Gabriel Salazar    |
 
+
 # Proyecto Estadistica descriptiva
 
 ## Dataset de vinos
