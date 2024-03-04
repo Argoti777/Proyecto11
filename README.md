@@ -268,5 +268,4 @@ pareto.chart(
 )
 print("El bloque J es el que representa la mayoría de problemas, por lo tanto hay que priorizar la mejora de ese conjunto")
 
-![](bef88a2e2f07ad84e80b0b888187443b03c183e3r1-195-258v2_uhq.jpg)
 
